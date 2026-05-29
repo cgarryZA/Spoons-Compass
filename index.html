@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Spoons Compass — the arrow points the way</title>
+<meta name="description" content="A pocket compass that points at your nearest J D Wetherspoon pub. One screen, no buttons. Free on Android." />
+<meta property="og:title" content="Spoons Compass" />
+<meta property="og:description" content="A pocket compass that points at your nearest J D Wetherspoon pub." />
+<meta property="og:image" content="icon-1024.png" />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="hero">
+  <img src="icon-256.png" alt="Spoons Compass icon" class="hero-icon" width="180" height="180" />
+  <h1>Spoons Compass</h1>
+  <p class="tagline">The arrow points the way.</p>
+  <a href="https://github.com/cgarryZA/Spoons-Compass/releases/latest/download/app-release.apk"
+     class="cta" id="download-btn" data-android="Download for Android"
+     data-other="Android only (download here)">
+    <span class="cta-platform">Android</span>
+    <span class="cta-label">Download .apk</span>
+  </a>
+  <p class="cta-note">Free. No ads. No tracking. About 42&nbsp;MB.</p>
+</header>
+
+<section class="lead">
+  <p>
+    Open the app and a compass arrow points at your nearest J&nbsp;D Wetherspoon pub.
+    The distance shows underneath. That's the entire app — no menus, no sign-in,
+    no settings, no ads, nothing to tap.
+  </p>
+</section>
+
+<section class="screens">
+  <figure>
+    <img src="screenshots/screen-dark.png" alt="Spoons Compass dark mode" loading="lazy" />
+    <figcaption>Dark mode</figcaption>
+  </figure>
+  <figure>
+    <img src="screenshots/screen-light.png" alt="Spoons Compass light mode" loading="lazy" />
+    <figcaption>Light mode (tap the screen to toggle)</figcaption>
+  </figure>
+</section>
+
+<section class="how">
+  <h2>How it works</h2>
+  <ol>
+    <li>Your phone's GPS finds you.</li>
+    <li>The magnetometer finds north.</li>
+    <li>A bit of geometry does the rest.</li>
+  </ol>
+  <p>
+    Everything happens on your device. No data is sent anywhere. The list of
+    pub locations is built into the app from public OpenStreetMap data.
+    The app works perfectly offline.
+  </p>
+</section>
+
+<section class="install">
+  <h2>Installing</h2>
+  <p>
+    Because Spoons Compass isn't on the Play Store, your phone will ask for
+    permission to install it from a browser.
+  </p>
+  <ol>
+    <li>Tap the download button at the top on your Android phone.</li>
+    <li>Open the downloaded <code>app-release.apk</code> file.</li>
+    <li>Android will ask you to <em>"Allow this source to install apps"</em> — tap through to Settings, toggle it on, come back.</li>
+    <li>Tap <strong>Install</strong>. Done — find the app in your drawer.</li>
+  </ol>
+  <p class="small">
+    Android Play Protect may show a warning that the developer isn't recognised. That's normal for any app outside the Play Store. Tap <em>Install anyway</em>.
+  </p>
+</section>
+
+<footer>
+  <p class="disclaimer">
+    Unofficial. Not affiliated with, endorsed by, sponsored by, or in any way
+    connected to J&nbsp;D Wetherspoon plc. "Wetherspoon" is a registered
+    trademark of J&nbsp;D Wetherspoon plc.
+  </p>
+  <nav class="footer-nav">
+    <a href="privacy.html">Privacy policy</a>
+    <span class="dot">·</span>
+    <a href="https://github.com/cgarryZA/Spoons-Compass">Source &amp; releases on GitHub</a>
+  </nav>
+</footer>
+
+<script>
+  // Tiny UA sniff to nudge non-Android users.
+  (function () {
+    var btn = document.getElementById('download-btn');
+    var label = btn.querySelector('.cta-label');
+    var platform = btn.querySelector('.cta-platform');
+    if (!/android/i.test(navigator.userAgent)) {
+      platform.textContent = 'Android only';
+      label.textContent = 'Download anyway';
+      btn.classList.add('cta-secondary');
+    }
+  })();
+</script>
+
+</body>
+</html>
