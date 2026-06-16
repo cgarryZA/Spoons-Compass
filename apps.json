@@ -1,0 +1,11 @@
+[
+  {
+    "id": "paideia",
+    "name": "Paideia",
+    "blurb": "Classical formation for the modern mind — become dangerously well-rounded.",
+    "web": "apps/paideia/",
+    "apk": "apps/paideia/paideia.apk",
+    "version": "0.1.0",
+    "domain": "Mathematics · Logic · the arts of reason"
+  }
+]
