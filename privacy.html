@@ -1,135 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Privacy Policy — Spoons Compass</title>
-<link rel="icon" type="image/png" href="favicon.png" />
-<link rel="stylesheet" href="style.css" />
-<style>
-  .policy {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 64px 24px 40px;
-  }
-  .policy h1 {
-    font-family: var(--serif);
-    color: var(--text);
-    font-size: 2.2rem;
-    margin: 0 0 6px;
-  }
-  .policy .updated {
-    color: var(--text-dim);
-    font-size: 0.9rem;
-    margin: 0 0 36px;
-  }
-  .policy h2 {
-    font-family: var(--serif);
-    color: var(--gold);
-    font-size: 1.4rem;
-    margin: 36px 0 12px;
-  }
-  .policy p, .policy ul {
-    color: var(--text-soft);
-    line-height: 1.65;
-  }
-  .policy ul { padding-left: 22px; }
-  .policy li { margin-bottom: 6px; }
-  .policy strong { color: var(--text); }
-  .policy .back {
-    display: inline-block;
-    margin-top: 40px;
-    color: var(--gold);
-    text-decoration: none;
-    border-bottom: 1px dotted rgba(212, 175, 55, 0.5);
-  }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paideia — Privacy Policy</title>
+  <style>
+    :root { --navy:#0E1726; --ivory:#F4ECD8; --bronze:#B08D57; --muted:#9aa0a6; }
+    body { margin:0; background:var(--navy); color:var(--ivory);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+    main { max-width:760px; margin:0 auto; padding:56px 22px 72px; }
+    h1 { font-family:Georgia,serif; font-size:2.2rem; font-weight:600; margin:0 0 4px; }
+    h1 .pi { color:var(--bronze); }
+    .sub { color:var(--bronze); margin-bottom:28px; }
+    h2 { font-family:Georgia,serif; font-weight:600; margin:30px 0 8px; font-size:1.25rem; }
+    p, li { color:#d7dce3; }
+    a { color:var(--bronze); }
+    .updated { color:var(--muted); font-size:.85rem; margin-top:36px; }
+  </style>
 </head>
 <body>
+  <main>
+    <h1><span class="pi">Π</span> Paideia — Privacy Policy</h1>
+    <div class="sub">Classical formation for the modern mind.</div>
 
-<main class="policy">
+    <p><strong>Paideia does not collect, transmit, or share any personal data.</strong> The app has
+    no user accounts, no analytics, no advertising, and no third-party trackers, and it does not send
+    your information to any server.</p>
 
-<h1>Privacy Policy</h1>
-<p class="updated">Last updated: 28 May 2026</p>
+    <h2>What the app stores</h2>
+    <p>Everything Paideia records — your learning progress, attempt history, streak, Seals, daily
+    goal, saved cards (your Canon), and settings — is stored <strong>locally on your own device
+    only</strong>. None of it leaves your device.</p>
 
-<p>
-Spoons Compass ("the app") is provided by Charlie Garry ("we", "us"). This
-policy describes what the app does with your data.
-</p>
+    <h2>Permissions</h2>
+    <p>If you enable the optional daily reminder, the app uses your device's local notifications to
+    remind you to study. No data is sent anywhere to do this; reminders are scheduled entirely on
+    your device.</p>
 
-<h2>Summary</h2>
-<p>
-The app reads your device's location and magnetometer locally on your phone
-to point you at the nearest Wetherspoons pub. It does not send your
-location, or any other personal data, to us or to any third party. It
-does not store your location after you close it.
-</p>
+    <h2>Deleting your data</h2>
+    <p>You can clear all stored data at any time from <em>Settings → Reset progress</em>. Uninstalling
+    the app also removes all of its data from your device.</p>
 
-<h2>Data the app accesses</h2>
-<ul>
-  <li><strong>Approximate and precise location</strong>
-    (<code>ACCESS_COARSE_LOCATION</code> / <code>ACCESS_FINE_LOCATION</code>) —
-    read in real time while the app is open, used only to calculate the
-    distance and bearing to the nearest pub. Never transmitted off the
-    device. Never written to persistent storage.</li>
-  <li><strong>Magnetometer / compass heading</strong> — read in real time
-    while the app is open, used only to rotate the on-screen arrow. Not
-    stored, not transmitted.</li>
-</ul>
+    <h2>Children</h2>
+    <p>Paideia does not knowingly collect any data from anyone, including children.</p>
 
-<h2>Data the app does not collect</h2>
-<ul>
-  <li>No accounts. No sign-in.</li>
-  <li>No analytics or telemetry.</li>
-  <li>No advertising or ad identifiers.</li>
-  <li>No crash reporting.</li>
-  <li>No cookies or local storage of personal data.</li>
-  <li>No contact list, calendar, photos, microphone, or camera access.</li>
-</ul>
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be posted at this address.</p>
 
-<h2>Third parties</h2>
-<p>
-The app does not communicate with any backend server we operate, and does
-not include any third-party SDKs that collect data. The list of Wetherspoon
-pub coordinates is bundled inside the app at build time from publicly
-available data on OpenStreetMap; no network call is made at runtime.
-</p>
+    <h2>Contact</h2>
+    <p>Questions about this policy? Contact the developer at
+    <a href="mailto:contact@paideia.app">contact@paideia.app</a>.</p>
 
-<h2>Children</h2>
-<p>
-The app is suitable for all ages and does not knowingly collect data from
-anyone, including children under 13 (or 16 in the UK).
-</p>
-
-<h2>Permissions on your device</h2>
-<p>
-You can revoke the location permission at any time from your Android
-device's <strong>Settings → Apps → Spoons Compass → Permissions</strong>.
-Without location permission the app cannot calculate distance or direction
-and will show a message asking you to re-enable it.
-</p>
-
-<h2>Changes to this policy</h2>
-<p>
-If we change this policy we will update the date at the top. The current
-version is always available at the URL where you found this page.
-</p>
-
-<h2>Contact</h2>
-<p>
-Questions: open an issue at
-<a href="https://github.com/cgarryZA/Spoons-Compass/issues" style="color: var(--gold);">github.com/cgarryZA/Spoons-Compass</a>.
-</p>
-
-<h2>Trademark</h2>
-<p>
-Spoons Compass is unofficial and is not affiliated with, endorsed by,
-sponsored by, or in any way connected to J D Wetherspoon plc.
-</p>
-
-<a href="index.html" class="back">← Back to app</a>
-
-</main>
-
+    <p class="updated">Last updated: June 2026.</p>
+  </main>
 </body>
 </html>
