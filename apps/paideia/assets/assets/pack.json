@@ -196,6 +196,23 @@
           ]
         },
         {
+          "id": "node:math314.setfun.iso-practice",
+          "title": "Injective, surjective, bijective — practice",
+          "order": 451,
+          "card_ids": [
+            "card:math314.setfun.injective.mcq2",
+            "card:math314.setfun.surjective.mcq2",
+            "card:math314.setfun.bijective.tf2",
+            "card:math314.setfun.inj-not-surj.tf",
+            "card:math314.setfun.bijective.fill2",
+            "card:math314.setfun.bijective.order",
+            "card:math314.setfun.iso.match2",
+            "card:math314.setfun.image.mcq2",
+            "card:math314.setfun.preimage.mcq2",
+            "card:math314.setfun.injective-apply.mcq"
+          ]
+        },
+        {
           "id": "node:math314.ind.basics",
           "title": "Induction: base case & induction step",
           "order": 500,
@@ -490,15 +507,15 @@
           },
           {
             "id": "b",
-            "text": "The examples chosen were not actually even."
+            "text": "The handful of examples chosen were not genuinely even numbers."
           },
           {
             "id": "c",
-            "text": "Examples are never allowed in mathematics."
+            "text": "Examples are merely illustrations and are never allowed in a proof."
           },
           {
             "id": "d",
-            "text": "Addition is undefined for even numbers."
+            "text": "Addition is not actually well defined when both inputs are even."
           }
         ]
       },
@@ -2579,11 +2596,11 @@
         "options": [
           {
             "id": "a",
-            "text": "the converse $Q \\Rightarrow P$"
+            "text": "the converse, $Q \\Rightarrow P$"
           },
           {
             "id": "b",
-            "text": "$\\neg P \\Rightarrow \\neg Q$"
+            "text": "the inverse, $\\neg P \\Rightarrow \\neg Q$"
           },
           {
             "id": "c",
@@ -2591,7 +2608,7 @@
           },
           {
             "id": "d",
-            "text": "$P \\wedge \\neg Q$"
+            "text": "the negation, $P \\wedge \\neg Q$"
           }
         ]
       },
@@ -3781,11 +3798,11 @@
           },
           {
             "id": "c",
-            "text": "When the hypothesis is false"
+            "text": "When the hypothesis P is already known to be false from the outset"
           },
           {
             "id": "d",
-            "text": "Only when a direct proof is impossible"
+            "text": "Only in the rare case when a direct proof is genuinely impossible"
           }
         ]
       },
@@ -4096,11 +4113,11 @@
         "options": [
           {
             "id": "a",
-            "text": "Because 1 is divisible by 2"
+            "text": "Because 1 is divisible by the prime number 2"
           },
           {
             "id": "b",
-            "text": "Because 1 is even"
+            "text": "Because 1 is an even number and all primes are odd"
           },
           {
             "id": "c",
@@ -4108,7 +4125,7 @@
           },
           {
             "id": "d",
-            "text": "Because 1 has too many divisors"
+            "text": "Because 1 has far too many positive divisors"
           }
         ]
       },
@@ -7800,7 +7817,7 @@
         "options": [
           {
             "id": "a",
-            "text": "A direct proof and a proof by contradiction"
+            "text": "A direct proof of the base case, then a proof by contradiction"
           },
           {
             "id": "b",
@@ -7808,7 +7825,7 @@
           },
           {
             "id": "c",
-            "text": "A conjecture and a counterexample"
+            "text": "Forming a conjecture and refuting it with a single counterexample"
           },
           {
             "id": "d",
@@ -8433,23 +8450,59 @@
       ],
       "answer": {
         "kind": "match",
-        "pairs": [
+        "left": [
           {
-            "left": "Base case",
-            "right": "Prove $P(1)$ (or $P(m)$)"
+            "id": "l1",
+            "text": "Base case"
           },
           {
-            "left": "Induction hypothesis",
-            "right": "The assumed proposition $P(n)$ in the induction step"
+            "id": "l2",
+            "text": "Induction hypothesis"
           },
           {
-            "left": "Well-ordering principle",
-            "right": "Every non-empty subset of $\\mathbb{N}$ has a minimum"
+            "id": "l3",
+            "text": "Well-ordering principle"
           },
           {
-            "left": "Induction with base case $m$",
-            "right": "Same concept, just with a different base case"
+            "id": "l4",
+            "text": "Induction with base case $m$"
           }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "Prove $P(1)$ (or $P(m)$)"
+          },
+          {
+            "id": "r2",
+            "text": "The assumed proposition $P(n)$ in the induction step"
+          },
+          {
+            "id": "r3",
+            "text": "Every non-empty subset of $\\mathbb{N}$ has a minimum"
+          },
+          {
+            "id": "r4",
+            "text": "Same concept, just with a different base case"
+          }
+        ],
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
         ]
       },
       "solution": [
@@ -9597,19 +9650,19 @@
         "options": [
           {
             "id": "a",
-            "text": "\\{1\\} \\in A"
+            "text": "$\\{1\\}$ is an element of $A$"
           },
           {
             "id": "b",
-            "text": "\\{1\\} \\in \\mathcal{P}(A)"
+            "text": "$\\{1\\}$ is an element of $\\mathcal{P}(A)$"
           },
           {
             "id": "c",
-            "text": "1 \\subseteq A"
+            "text": "$1$ is a subset of $A$"
           },
           {
             "id": "d",
-            "text": "1 \\in \\mathcal{P}(A)"
+            "text": "$1$ is an element of $\\mathcal{P}(A)$"
           }
         ]
       },
@@ -10337,23 +10390,59 @@
       ],
       "answer": {
         "kind": "match",
-        "pairs": [
+        "left": [
           {
-            "left": "Nested collection",
-            "right": "Successive sets satisfy a subset relation, e.g. A1 ⊇ A2 ⊇ A3 ⊇ ···"
+            "id": "l1",
+            "text": "Nested collection"
           },
           {
-            "left": "Pairwise disjoint",
-            "right": "Am ∩ An = ∅ whenever m ≠ n"
+            "id": "l2",
+            "text": "Pairwise disjoint"
           },
           {
-            "left": "Finite intersection (nested)",
-            "right": "Equals the smallest of the listed sets"
+            "id": "l3",
+            "text": "Finite intersection (nested)"
           },
           {
-            "left": "Naïve limit of sets",
-            "right": "An unjustified shortcut you cannot trust"
+            "id": "l4",
+            "text": "Naïve limit of sets"
           }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "Successive sets satisfy a subset relation, e.g. A1 ⊇ A2 ⊇ A3 ⊇ ···"
+          },
+          {
+            "id": "r2",
+            "text": "Am ∩ An = ∅ whenever m ≠ n"
+          },
+          {
+            "id": "r3",
+            "text": "Equals the smallest of the listed sets"
+          },
+          {
+            "id": "r4",
+            "text": "An unjustified shortcut you cannot trust"
+          }
+        ],
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
         ]
       },
       "solution": [
@@ -13894,11 +13983,11 @@
           },
           {
             "id": "c",
-            "text": "The conclusion '$x+y$ is odd' is false."
+            "text": "The conclusion that $x+y$ is odd is simply false for these integers."
           },
           {
             "id": "d",
-            "text": "There is no error; the proof is fully correct."
+            "text": "There is no error at all; the proof is completely correct as written."
           }
         ]
       },
@@ -16739,19 +16828,19 @@
         "options": [
           {
             "id": "a",
-            "text": "Yes — every real $x$ gives a real output."
+            "text": "Yes — every real input $x$ produces a real number output."
           },
           {
             "id": "b",
-            "text": "No — for $-1<x<1$ we have $x^2-1<0$, so $\\sqrt{x^2-1}$ is not a real number; $f$ is not defined on all of $\\mathbb{R}$."
+            "text": "No — for $-1<x<1$, $x^2-1<0$, so $\\sqrt{x^2-1}$ is not real; $f$ is undefined there."
           },
           {
             "id": "c",
-            "text": "No — because $\\sqrt{\\,}$ gives two values $\\pm$."
+            "text": "No — the square-root symbol returns two values $\\pm\\sqrt{\\cdot}$."
           },
           {
             "id": "d",
-            "text": "Yes — it is bijective."
+            "text": "Yes — the rule is a bijection from $\\mathbb{R}$ to $\\mathbb{R}$."
           }
         ]
       },
@@ -17783,7 +17872,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Yes — every pair $(x,x)$ is present."
+            "text": "Yes — every pair of the form $(x,x)$ is present in $R$ for all $x\\in A$."
           },
           {
             "id": "b",
@@ -17791,7 +17880,11 @@
           },
           {
             "id": "c",
-            "text": "No — because $(1,3)$ is present."
+            "text": "No — because the off-diagonal pair $(1,3)$ appears in $R$."
+          },
+          {
+            "id": "d",
+            "text": "Yes — $R$ is symmetric, so it must be reflexive as well."
           }
         ]
       },
@@ -17933,11 +18026,15 @@
           },
           {
             "id": "b",
-            "text": "No — $(1,3)$ appears but $(3,1)$ does not."
+            "text": "No — the pair $(1,3)$ appears in $R$ but its reverse $(3,1)$ does not."
           },
           {
             "id": "c",
-            "text": "No — $(2,2)$ is missing."
+            "text": "No — the diagonal pair $(2,2)$ is missing from the relation $R$."
+          },
+          {
+            "id": "d",
+            "text": "Only partially — symmetry holds for some pairs but not for $(4,4)$."
           }
         ]
       },
@@ -19173,6 +19270,639 @@
           "source_quote": "The cardinality of a set A is denoted"
         }
       ]
+    },
+    "card:math314.setfun.injective.mcq2": {
+      "id": "card:math314.setfun.injective.mcq2",
+      "kind": "problem",
+      "type": "mcq",
+      "difficulty": 2,
+      "concepts": [
+        "concept:math314.setfun.injective_surjective_bijective"
+      ],
+      "prerequisites": [
+        "concept:math314.setfun.function"
+      ],
+      "roadmap_ids": [
+        "roadmap:math314.sets"
+      ],
+      "render": [
+        {
+          "t": "text",
+          "text": "What does it mean for a function to be injective?"
+        }
+      ],
+      "answer": {
+        "kind": "mcq",
+        "correct_id": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Distinct inputs produce distinct outputs."
+          },
+          {
+            "id": "b",
+            "text": "Every potential output is realized."
+          },
+          {
+            "id": "c",
+            "text": "Some inputs share the same output."
+          },
+          {
+            "id": "d",
+            "text": "Every input has exactly one output."
+          }
+        ]
+      },
+      "solution": [
+        {
+          "t": "text",
+          "text": "Injective means distinct inputs produce distinct outputs; (b) is surjectivity and (d) is just being a function."
+        }
+      ],
+      "mistake_tags": [
+        "wrong_definition"
+      ],
+      "epistemic": "grounded_explanation",
+      "status": "ai_grounded",
+      "sources": [
+        {
+          "source_id": "src:math314.setfun.injective",
+          "source_quote": "distinct inputs produce distinct outputs"
+        }
+      ]
+    },
+    "card:math314.setfun.surjective.mcq2": {
+      "id": "card:math314.setfun.surjective.mcq2",
+      "kind": "problem",
+      "type": "mcq",
+      "difficulty": 2,
+      "concepts": [
+        "concept:math314.setfun.injective_surjective_bijective"
+      ],
+      "prerequisites": [
+        "concept:math314.setfun.function"
+      ],
+      "roadmap_ids": [
+        "roadmap:math314.sets"
+      ],
+      "render": [
+        {
+          "t": "text",
+          "text": "A function is surjective exactly when:"
+        }
+      ],
+      "answer": {
+        "kind": "mcq",
+        "correct_id": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Every potential output is realized."
+          },
+          {
+            "id": "b",
+            "text": "Distinct inputs produce distinct outputs."
+          },
+          {
+            "id": "c",
+            "text": "It is both one-to-one and onto."
+          },
+          {
+            "id": "d",
+            "text": "No output is ever realized twice."
+          }
+        ]
+      },
+      "solution": [
+        {
+          "t": "text",
+          "text": "Surjective (onto) means every potential output is realized; (b) is injectivity, (c) is bijectivity."
+        }
+      ],
+      "mistake_tags": [
+        "wrong_definition"
+      ],
+      "epistemic": "grounded_explanation",
+      "status": "ai_grounded",
+      "sources": [
+        {
+          "source_id": "src:math314.setfun.surjective",
+          "source_quote": "every potential output is realized"
+        }
+      ]
+    },
+    "card:math314.setfun.bijective.tf2": {
+      "id": "card:math314.setfun.bijective.tf2",
+      "kind": "problem",
+      "type": "true_false",
+      "difficulty": 2,
+      "concepts": [
+        "concept:math314.setfun.injective_surjective_bijective"
+      ],
+      "prerequisites": [
+        "concept:math314.setfun.function"
+      ],
+      "roadmap_ids": [
+        "roadmap:math314.sets"
+      ],
+      "render": [
+        {
+          "t": "text",
+          "text": "True or false: a bijection is a function that is both injective and surjective."
+        }
+      ],
+      "answer": {
+        "kind": "true_false",
+        "correct": true
+      },
+      "solution": [
+        {
+          "t": "text",
+          "text": "True — by definition a function is bijective if it is both injective and surjective."
+        }
+      ],
+      "mistake_tags": [],
+      "epistemic": "grounded_explanation",
+      "status": "ai_grounded",
+      "sources": [
+        {
+          "source_id": "src:math314.setfun.bijective",
+          "source_quote": "both injective and surjective"
+        }
+      ]
+    },
+    "card:math314.setfun.inj-not-surj.tf": {
+      "id": "card:math314.setfun.inj-not-surj.tf",
+      "kind": "problem",
+      "type": "true_false",
+      "difficulty": 2,
+      "concepts": [
+        "concept:math314.setfun.injective_surjective_bijective"
+      ],
+      "prerequisites": [
+        "concept:math314.setfun.function"
+      ],
+      "roadmap_ids": [
+        "roadmap:math314.sets"
+      ],
+      "render": [
+        {
+          "t": "text",
+          "text": "True or false: every injective function is automatically surjective."
+        }
+      ],
+      "answer": {
+        "kind": "true_false",
+        "correct": false
+      },
+      "solution": [
+        {
+          "t": "text",
+          "text": "False — injectivity and surjectivity are independent; a bijection requires both."
+        }
+      ],
+      "mistake_tags": [
+        "wrong_definition"
+      ],
+      "epistemic": "grounded_explanation",
+      "status": "ai_grounded",
+      "sources": [
+        {
+          "source_id": "src:math314.setfun.bijective",
+          "source_quote": "both injective and surjective"
+        }
+      ]
+    },
+    "card:math314.setfun.bijective.fill2": {
+      "id": "card:math314.setfun.bijective.fill2",
+      "kind": "problem",
+      "type": "fill_blank",
+      "difficulty": 2,
+      "concepts": [
+        "concept:math314.setfun.injective_surjective_bijective"
+      ],
+      "prerequisites": [
+        "concept:math314.setfun.function"
+      ],
+      "roadmap_ids": [
+        "roadmap:math314.sets"
+      ],
+      "render": [
+        {
+          "t": "text",
+          "text": "Complete the definition: a function is bijective when it is both injective and ___."
+        }
+      ],
+      "answer": {
+        "kind": "fill_blank",
+        "tokens": [
+          "surjective"
+        ],
+        "distractors": [
+          "reflexive",
+          "bounded"
+        ],
+        "accepted": [
+          "surjective"
+        ]
+      },
+      "solution": [
+        {
+          "t": "text",
+          "text": "Bijective = injective and surjective."
+        }
+      ],
+      "mistake_tags": [],
+      "epistemic": "grounded_explanation",
+      "status": "ai_grounded",
+      "sources": [
+        {
+          "source_id": "src:math314.setfun.bijective",
+          "source_quote": "both injective and surjective"
+        }
+      ]
+    },
+    "card:math314.setfun.bijective.order": {
+      "id": "card:math314.setfun.bijective.order",
+      "kind": "problem",
+      "type": "order_proof",
+      "difficulty": 3,
+      "concepts": [
+        "concept:math314.setfun.injective_surjective_bijective"
+      ],
+      "prerequisites": [
+        "concept:math314.setfun.function"
+      ],
+      "roadmap_ids": [
+        "roadmap:math314.sets"
+      ],
+      "render": [
+        {
+          "t": "text",
+          "text": "Order the steps to show a function "
+        },
+        {
+          "t": "math",
+          "svg": "fa791edf5d50d606864dfa66c26152280c04be59cf41425b8b21b5218b3f6e0d.svg",
+          "display": false,
+          "hEx": 2.059,
+          "dEx": 0.464
+        },
+        {
+          "t": "text",
+          "text": " is bijective."
+        }
+      ],
+      "answer": {
+        "kind": "order_proof",
+        "steps": [
+          {
+            "id": "s1",
+            "text": "Show f is injective (distinct inputs give distinct outputs)."
+          },
+          {
+            "id": "s2",
+            "text": "Show f is surjective (every output is realized)."
+          },
+          {
+            "id": "s3",
+            "text": "Conclude f is bijective."
+          }
+        ],
+        "correct_order": [
+          "s1",
+          "s2",
+          "s3"
+        ]
+      },
+      "solution": [
+        {
+          "t": "text",
+          "text": "Prove injectivity and surjectivity separately, then conclude bijectivity."
+        }
+      ],
+      "mistake_tags": [],
+      "epistemic": "grounded_explanation",
+      "status": "ai_grounded",
+      "sources": [
+        {
+          "source_id": "src:math314.setfun.bijective",
+          "source_quote": "both injective and surjective"
+        }
+      ]
+    },
+    "card:math314.setfun.iso.match2": {
+      "id": "card:math314.setfun.iso.match2",
+      "kind": "problem",
+      "type": "match",
+      "difficulty": 2,
+      "concepts": [
+        "concept:math314.setfun.injective_surjective_bijective"
+      ],
+      "prerequisites": [
+        "concept:math314.setfun.function"
+      ],
+      "roadmap_ids": [
+        "roadmap:math314.sets"
+      ],
+      "render": [
+        {
+          "t": "text",
+          "text": "Match each property to its meaning."
+        }
+      ],
+      "answer": {
+        "kind": "match",
+        "left": [
+          {
+            "id": "l1",
+            "text": "Injective"
+          },
+          {
+            "id": "l2",
+            "text": "Surjective"
+          },
+          {
+            "id": "l3",
+            "text": "Bijective"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "distinct inputs produce distinct outputs"
+          },
+          {
+            "id": "r2",
+            "text": "every potential output is realized"
+          },
+          {
+            "id": "r3",
+            "text": "both injective and surjective"
+          }
+        ],
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "solution": [
+        {
+          "t": "text",
+          "text": "Injective: distinct inputs give distinct outputs. Surjective: every output realized. Bijective: both."
+        }
+      ],
+      "mistake_tags": [],
+      "epistemic": "grounded_explanation",
+      "status": "ai_grounded",
+      "sources": [
+        {
+          "source_id": "src:math314.setfun.injective",
+          "source_quote": "distinct inputs produce distinct outputs"
+        },
+        {
+          "source_id": "src:math314.setfun.surjective",
+          "source_quote": "every potential output is realized"
+        },
+        {
+          "source_id": "src:math314.setfun.bijective",
+          "source_quote": "both injective and surjective"
+        }
+      ]
+    },
+    "card:math314.setfun.image.mcq2": {
+      "id": "card:math314.setfun.image.mcq2",
+      "kind": "problem",
+      "type": "mcq",
+      "difficulty": 2,
+      "concepts": [
+        "concept:math314.setfun.image"
+      ],
+      "prerequisites": [
+        "concept:math314.setfun.function"
+      ],
+      "roadmap_ids": [
+        "roadmap:math314.sets"
+      ],
+      "render": [
+        {
+          "t": "text",
+          "text": "The image of a subset "
+        },
+        {
+          "t": "math",
+          "svg": "2ed9ceef5d8f36786a12f39fc9d505d497ab59e776fedbea8966fe016e5cfb6f.svg",
+          "display": false,
+          "hEx": 1.932,
+          "dEx": 0.312
+        },
+        {
+          "t": "text",
+          "text": " under "
+        },
+        {
+          "t": "math",
+          "svg": "fa791edf5d50d606864dfa66c26152280c04be59cf41425b8b21b5218b3f6e0d.svg",
+          "display": false,
+          "hEx": 2.059,
+          "dEx": 0.464
+        },
+        {
+          "t": "text",
+          "text": " is:"
+        }
+      ],
+      "answer": {
+        "kind": "mcq",
+        "correct_id": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The set of outputs given inputs in U."
+          },
+          {
+            "id": "b",
+            "text": "The set of inputs which are mapped into U."
+          },
+          {
+            "id": "c",
+            "text": "The set of all inputs in the domain."
+          },
+          {
+            "id": "d",
+            "text": "The whole codomain of the function."
+          }
+        ]
+      },
+      "solution": [
+        {
+          "t": "text",
+          "text": "The image of U is the set of outputs given inputs in U; (b) describes a pre-image."
+        }
+      ],
+      "mistake_tags": [
+        "wrong_definition"
+      ],
+      "epistemic": "grounded_explanation",
+      "status": "ai_grounded",
+      "sources": [
+        {
+          "source_id": "src:math314.setfun.image",
+          "source_quote": "the set of outputs given inputs in U"
+        }
+      ]
+    },
+    "card:math314.setfun.preimage.mcq2": {
+      "id": "card:math314.setfun.preimage.mcq2",
+      "kind": "problem",
+      "type": "mcq",
+      "difficulty": 2,
+      "concepts": [
+        "concept:math314.setfun.image"
+      ],
+      "prerequisites": [
+        "concept:math314.setfun.function"
+      ],
+      "roadmap_ids": [
+        "roadmap:math314.sets"
+      ],
+      "render": [
+        {
+          "t": "text",
+          "text": "The inverse image (pre-image) of a subset "
+        },
+        {
+          "t": "math",
+          "svg": "58e28bc5cf96830301ce113d1d58f85c02d7e7fd74873ea8fea5d300d618d869.svg",
+          "display": false,
+          "hEx": 1.857,
+          "dEx": 0.312
+        },
+        {
+          "t": "text",
+          "text": " is:"
+        }
+      ],
+      "answer": {
+        "kind": "mcq",
+        "correct_id": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The set of inputs which are mapped into V."
+          },
+          {
+            "id": "b",
+            "text": "The set of outputs given inputs in V."
+          },
+          {
+            "id": "c",
+            "text": "The set of all outputs in the codomain."
+          },
+          {
+            "id": "d",
+            "text": "The range of the function."
+          }
+        ]
+      },
+      "solution": [
+        {
+          "t": "text",
+          "text": "The pre-image of V is the set of inputs which are mapped into V; (b) describes the image."
+        }
+      ],
+      "mistake_tags": [
+        "wrong_definition"
+      ],
+      "epistemic": "grounded_explanation",
+      "status": "ai_grounded",
+      "sources": [
+        {
+          "source_id": "src:math314.setfun.preimage",
+          "source_quote": "the set of inputs which are mapped into V"
+        }
+      ]
+    },
+    "card:math314.setfun.injective-apply.mcq": {
+      "id": "card:math314.setfun.injective-apply.mcq",
+      "kind": "problem",
+      "type": "mcq",
+      "difficulty": 3,
+      "concepts": [
+        "concept:math314.setfun.injective_surjective_bijective"
+      ],
+      "prerequisites": [
+        "concept:math314.setfun.function"
+      ],
+      "roadmap_ids": [
+        "roadmap:math314.sets"
+      ],
+      "render": [
+        {
+          "t": "text",
+          "text": "Which condition exactly captures that "
+        },
+        {
+          "t": "math",
+          "svg": "fa791edf5d50d606864dfa66c26152280c04be59cf41425b8b21b5218b3f6e0d.svg",
+          "display": false,
+          "hEx": 2.059,
+          "dEx": 0.464
+        },
+        {
+          "t": "text",
+          "text": " is injective?"
+        }
+      ],
+      "answer": {
+        "kind": "mcq",
+        "correct_id": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "f(a1) = f(a2) implies a1 = a2."
+          },
+          {
+            "id": "b",
+            "text": "For every b there is some a with f(a) = b."
+          },
+          {
+            "id": "c",
+            "text": "a1 = a2 implies f(a1) = f(a2)."
+          },
+          {
+            "id": "d",
+            "text": "f(a1) is never equal to f(a2)."
+          }
+        ]
+      },
+      "solution": [
+        {
+          "t": "text",
+          "text": "Injective: equal outputs force equal inputs. (b) is surjectivity; (c) holds for any function; (d) is false."
+        }
+      ],
+      "mistake_tags": [
+        "wrong_definition"
+      ],
+      "epistemic": "grounded_explanation",
+      "status": "ai_grounded",
+      "sources": [
+        {
+          "source_id": "src:math314.setfun.injective",
+          "source_quote": "distinct inputs produce distinct outputs"
+        }
+      ]
     }
   },
   "concepts": [
@@ -19757,6 +20487,16 @@
     "card:math314.setfun.surjective.def",
     "card:math314.setfun.bijective.fill",
     "card:math314.setfun.injective.mcq",
+    "card:math314.setfun.injective.mcq2",
+    "card:math314.setfun.surjective.mcq2",
+    "card:math314.setfun.bijective.tf2",
+    "card:math314.setfun.inj-not-surj.tf",
+    "card:math314.setfun.bijective.fill2",
+    "card:math314.setfun.bijective.order",
+    "card:math314.setfun.iso.match2",
+    "card:math314.setfun.image.mcq2",
+    "card:math314.setfun.preimage.mcq2",
+    "card:math314.setfun.injective-apply.mcq",
     "card:math314.ind.induction.def",
     "card:math314.ind.recursive.tf",
     "card:math314.ind.two-parts.mcq",
