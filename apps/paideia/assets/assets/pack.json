@@ -19175,6 +19175,510 @@
       ]
     }
   },
+  "concepts": [
+    {
+      "id": "concept:math314.intro.proof",
+      "title": "What is a proof?",
+      "blurb": "A proof is an argument that establishes the truth of an assertion by reference to definitions.",
+      "unit": "Introduction to Proofs",
+      "prerequisites": [],
+      "topo_rank": 100
+    },
+    {
+      "id": "concept:math314.intro.even",
+      "title": "Even integers",
+      "blurb": "An integer is even if it can be written as 2k for some integer k.",
+      "unit": "Introduction to Proofs",
+      "prerequisites": [],
+      "topo_rank": 101
+    },
+    {
+      "id": "concept:math314.intro.sum-evens",
+      "title": "Sum of two evens is even",
+      "blurb": "The sum of any pair of even integers is even; the standard proof rearranges the definition.",
+      "unit": "Introduction to Proofs",
+      "prerequisites": [
+        "concept:math314.intro.even",
+        "concept:math314.intro.proof"
+      ],
+      "topo_rank": 102
+    },
+    {
+      "id": "concept:math314.intro.conjecture",
+      "title": "Theorems and conjectures",
+      "blurb": "A theorem is a proved statement; a conjecture is one we suspect but cannot yet prove.",
+      "unit": "Introduction to Proofs",
+      "prerequisites": [
+        "concept:math314.intro.proof"
+      ],
+      "topo_rank": 103
+    },
+    {
+      "id": "concept:math314.intro.counterexample",
+      "title": "Counterexample",
+      "blurb": "A single instance where a claim fails disproves a statement made about all cases.",
+      "unit": "Introduction to Proofs",
+      "prerequisites": [
+        "concept:math314.intro.conjecture"
+      ],
+      "topo_rank": 104
+    },
+    {
+      "id": "concept:math314.logic.proposition",
+      "title": "Proposition",
+      "blurb": "A statement that is either true or false.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [],
+      "topo_rank": 0
+    },
+    {
+      "id": "concept:math314.logic.connectives",
+      "title": "Connectives: and / or / not",
+      "blurb": "Conjunction, disjunction, and negation combine propositions.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.logic.proposition"
+      ],
+      "topo_rank": 1
+    },
+    {
+      "id": "concept:math314.logic.tautology",
+      "title": "Tautology and contradiction",
+      "blurb": "A tautology is always true; a contradiction is always false.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.logic.connectives"
+      ],
+      "topo_rank": 2
+    },
+    {
+      "id": "concept:math314.logic.conditional",
+      "title": "Conditional and biconditional",
+      "blurb": "P implies Q (hypothesis, conclusion); P iff Q.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.logic.proposition"
+      ],
+      "topo_rank": 3
+    },
+    {
+      "id": "concept:math314.logic.converse",
+      "title": "Converse and contrapositive",
+      "blurb": "Converse reverses a conditional; contrapositive is equivalent to it.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.logic.conditional"
+      ],
+      "topo_rank": 4
+    },
+    {
+      "id": "concept:math314.logic.propfunc",
+      "title": "Propositional function",
+      "blurb": "A family of propositions depending on a variable.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.logic.proposition"
+      ],
+      "topo_rank": 5
+    },
+    {
+      "id": "concept:math314.logic.quantifiers",
+      "title": "Universal and existential quantifiers",
+      "blurb": "For-all and there-exists over a domain.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.logic.propfunc"
+      ],
+      "topo_rank": 6
+    },
+    {
+      "id": "concept:math314.logic.quantifier_negation",
+      "title": "Negating quantifiers",
+      "blurb": "Negation swaps for-all and there-exists, negating the inside.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.logic.quantifiers"
+      ],
+      "topo_rank": 7
+    },
+    {
+      "id": "concept:math314.proofs.direct",
+      "title": "Direct proof",
+      "blurb": "Assume the hypothesis P and deduce the conclusion Q; the simplest logical flow.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [],
+      "topo_rank": 10
+    },
+    {
+      "id": "concept:math314.proofs.contrapositive",
+      "title": "Proof by contrapositive",
+      "blurb": "Directly prove ¬Q ⇒ ¬P, which is logically equivalent to P ⇒ Q.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.proofs.direct"
+      ],
+      "topo_rank": 11
+    },
+    {
+      "id": "concept:math314.proofs.contradiction",
+      "title": "Proof by contradiction",
+      "blurb": "Assume P and ¬Q, then derive a contradiction to conclude P ⇒ Q.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.proofs.direct"
+      ],
+      "topo_rank": 12
+    },
+    {
+      "id": "concept:math314.proofs.strategy",
+      "title": "Choosing a proof strategy",
+      "blurb": "How to pick among direct, contrapositive, and contradiction approaches.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.proofs.direct",
+        "concept:math314.proofs.contrapositive",
+        "concept:math314.proofs.contradiction"
+      ],
+      "topo_rank": 13
+    },
+    {
+      "id": "concept:math314.proofs.rational",
+      "title": "Rational and irrational numbers",
+      "blurb": "x is rational if x = m/n for integers m, n; irrational if no such integers exist.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.proofs.contradiction"
+      ],
+      "topo_rank": 14
+    },
+    {
+      "id": "concept:math314.proofs.prime",
+      "title": "Prime numbers",
+      "blurb": "An integer ≥ 2 is prime if its only positive divisors are itself and 1.",
+      "unit": "Logic & Proofs",
+      "prerequisites": [
+        "concept:math314.proofs.contradiction"
+      ],
+      "topo_rank": 15
+    },
+    {
+      "id": "concept:math314.div.divides",
+      "title": "Divisibility",
+      "blurb": "n | m means m = nk for some integer k.",
+      "unit": "Divisibility & Number Theory",
+      "prerequisites": [],
+      "topo_rank": 0
+    },
+    {
+      "id": "concept:math314.div.division_algorithm",
+      "title": "Division algorithm",
+      "blurb": "Every m = qn + r with a unique quotient q and remainder 0 ≤ r < n.",
+      "unit": "Divisibility & Number Theory",
+      "prerequisites": [
+        "concept:math314.div.divides"
+      ],
+      "topo_rank": 1
+    },
+    {
+      "id": "concept:math314.div.congruence",
+      "title": "Congruence modulo n",
+      "blurb": "a ≡ b (mod n) when a and b share the same remainder on division by n.",
+      "unit": "Divisibility & Number Theory",
+      "prerequisites": [
+        "concept:math314.div.division_algorithm"
+      ],
+      "topo_rank": 2
+    },
+    {
+      "id": "concept:math314.div.gcd",
+      "title": "Greatest common divisor",
+      "blurb": "gcd(a, b) is the largest positive divisor of both a and b.",
+      "unit": "Divisibility & Number Theory",
+      "prerequisites": [
+        "concept:math314.div.divides"
+      ],
+      "topo_rank": 3
+    },
+    {
+      "id": "concept:math314.div.euclidean_algorithm",
+      "title": "Euclidean algorithm",
+      "blurb": "Repeated division; gcd(a, b) is the last non-zero remainder.",
+      "unit": "Divisibility & Number Theory",
+      "prerequisites": [
+        "concept:math314.div.gcd",
+        "concept:math314.div.division_algorithm"
+      ],
+      "topo_rank": 4
+    },
+    {
+      "id": "concept:math314.div.bezout",
+      "title": "Bézout's identity",
+      "blurb": "There exist integers x, y with gcd(a, b) = ax + by.",
+      "unit": "Divisibility & Number Theory",
+      "prerequisites": [
+        "concept:math314.div.euclidean_algorithm"
+      ],
+      "topo_rank": 5
+    },
+    {
+      "id": "concept:math314.setfun.union",
+      "title": "Union of sets",
+      "blurb": "A ∪ B is the set of elements lying in A or in B (or in both).",
+      "unit": "Sets & Functions",
+      "prerequisites": [],
+      "topo_rank": 0
+    },
+    {
+      "id": "concept:math314.setfun.intersection",
+      "title": "Intersection of sets",
+      "blurb": "A ∩ B is the set of elements lying in both A and B; disjoint means A ∩ B = ∅.",
+      "unit": "Sets & Functions",
+      "prerequisites": [],
+      "topo_rank": 0
+    },
+    {
+      "id": "concept:math314.setfun.complement",
+      "title": "Complement of a set",
+      "blurb": "Aᶜ is the set of elements of a universal set U not in A; B \\ A is the relative complement.",
+      "unit": "Sets & Functions",
+      "prerequisites": [
+        "concept:math314.setfun.intersection"
+      ],
+      "topo_rank": 1
+    },
+    {
+      "id": "concept:math314.setfun.function",
+      "title": "Function (domain & codomain)",
+      "blurb": "f : A → B assigns each input a ∈ A a single output f(a) ∈ B; A is the domain, B the codomain.",
+      "unit": "Sets & Functions",
+      "prerequisites": [
+        "concept:math314.setfun.union"
+      ],
+      "topo_rank": 2
+    },
+    {
+      "id": "concept:math314.setfun.image",
+      "title": "Image, range & pre-image",
+      "blurb": "f(U) is the set of outputs from inputs in U; range f = f(A); f⁻¹(V) is the inverse image of V.",
+      "unit": "Sets & Functions",
+      "prerequisites": [
+        "concept:math314.setfun.function"
+      ],
+      "topo_rank": 3
+    },
+    {
+      "id": "concept:math314.setfun.injective_surjective_bijective",
+      "title": "Injective, surjective, bijective",
+      "blurb": "Injective: distinct inputs give distinct outputs; surjective: every output is realized; bijective: both.",
+      "unit": "Sets & Functions",
+      "prerequisites": [
+        "concept:math314.setfun.image"
+      ],
+      "topo_rank": 4
+    },
+    {
+      "id": "concept:math314.ind.induction",
+      "title": "Proof by induction",
+      "blurb": "Prove a base case and an induction step to establish a proposition for every natural number.",
+      "unit": "Induction",
+      "prerequisites": [],
+      "topo_rank": 0
+    },
+    {
+      "id": "concept:math314.ind.hypothesis",
+      "title": "Induction hypothesis",
+      "blurb": "In the induction step, the assumed proposition P(n) used to deduce P(n+1).",
+      "unit": "Induction",
+      "prerequisites": [
+        "concept:math314.ind.induction"
+      ],
+      "topo_rank": 1
+    },
+    {
+      "id": "concept:math314.ind.well_ordering",
+      "title": "Well-ordering principle",
+      "blurb": "Every non-empty subset of N has a minimum element; this justifies induction.",
+      "unit": "Induction",
+      "prerequisites": [
+        "concept:math314.ind.induction"
+      ],
+      "topo_rank": 2
+    },
+    {
+      "id": "concept:math314.ind.strong_induction",
+      "title": "Strong induction",
+      "blurb": "An induction step may assume all previous propositions; may need several base cases.",
+      "unit": "Induction",
+      "prerequisites": [
+        "concept:math314.ind.hypothesis",
+        "concept:math314.ind.well_ordering"
+      ],
+      "topo_rank": 3
+    },
+    {
+      "id": "concept:math314.st2.cartesian_product",
+      "title": "Cartesian product",
+      "blurb": "A × B is the set of all ordered pairs (a, b) with a ∈ A and b ∈ B.",
+      "unit": "Set Theory II",
+      "prerequisites": [],
+      "topo_rank": 0
+    },
+    {
+      "id": "concept:math314.st2.power_set",
+      "title": "Power set",
+      "blurb": "P(A) is the set of all subsets of A; if |A| = n then |P(A)| = 2^n.",
+      "unit": "Set Theory II",
+      "prerequisites": [
+        "concept:math314.st2.cartesian_product"
+      ],
+      "topo_rank": 1
+    },
+    {
+      "id": "concept:math314.st2.indexed_collections",
+      "title": "Indexed unions and intersections",
+      "blurb": "For a collection {An}, the union collects x in some An and the intersection collects x in every An.",
+      "unit": "Set Theory II",
+      "prerequisites": [
+        "concept:math314.st2.power_set"
+      ],
+      "topo_rank": 2
+    },
+    {
+      "id": "concept:math314.rel.binary_relation",
+      "title": "Binary relation",
+      "blurb": "A relation R from A to B is a set of ordered pairs, i.e. a subset of A × B.",
+      "unit": "Relations & Partitions",
+      "prerequisites": [],
+      "topo_rank": 0
+    },
+    {
+      "id": "concept:math314.rel.properties",
+      "title": "Reflexive, symmetric, transitive",
+      "blurb": "Three properties a relation on a set may satisfy: x ∼ x; x ∼ y ⇒ y ∼ x; x ∼ y and y ∼ z ⇒ x ∼ z.",
+      "unit": "Relations & Partitions",
+      "prerequisites": [
+        "concept:math314.rel.binary_relation"
+      ],
+      "topo_rank": 1
+    },
+    {
+      "id": "concept:math314.rel.equivalence_relation",
+      "title": "Equivalence relation",
+      "blurb": "A relation that is reflexive, symmetric, and transitive.",
+      "unit": "Relations & Partitions",
+      "prerequisites": [
+        "concept:math314.rel.properties"
+      ],
+      "topo_rank": 2
+    },
+    {
+      "id": "concept:math314.rel.equivalence_class",
+      "title": "Equivalence class",
+      "blurb": "The set [x] of all elements related to x under an equivalence relation.",
+      "unit": "Relations & Partitions",
+      "prerequisites": [
+        "concept:math314.rel.equivalence_relation"
+      ],
+      "topo_rank": 3
+    },
+    {
+      "id": "concept:math314.rel.partition",
+      "title": "Partition",
+      "blurb": "A collection of non-empty subsets that cover X and are pairwise disjoint.",
+      "unit": "Relations & Partitions",
+      "prerequisites": [
+        "concept:math314.rel.binary_relation"
+      ],
+      "topo_rank": 4
+    },
+    {
+      "id": "concept:math314.rel.classes_partition",
+      "title": "Equivalence classes partition",
+      "blurb": "The equivalence classes of an equivalence relation form a partition, and vice versa.",
+      "unit": "Relations & Partitions",
+      "prerequisites": [
+        "concept:math314.rel.equivalence_class",
+        "concept:math314.rel.partition"
+      ],
+      "topo_rank": 5
+    },
+    {
+      "id": "concept:math314.card.cardinality",
+      "title": "Cardinality",
+      "blurb": "An abstract measure of size; for finite sets it is the number of elements.",
+      "unit": "Cardinality",
+      "prerequisites": [],
+      "topo_rank": 0
+    },
+    {
+      "id": "concept:math314.card.same_cardinality",
+      "title": "Same cardinality (bijection)",
+      "blurb": "|A| = |B| means there is a bijection between A and B.",
+      "unit": "Cardinality",
+      "prerequisites": [
+        "concept:math314.card.cardinality"
+      ],
+      "topo_rank": 1
+    },
+    {
+      "id": "concept:math314.card.finite_infinite",
+      "title": "Finite and infinite sets",
+      "blurb": "A finite set has finitely many elements; an infinite set can match a proper subset.",
+      "unit": "Cardinality",
+      "prerequisites": [
+        "concept:math314.card.same_cardinality"
+      ],
+      "topo_rank": 2
+    },
+    {
+      "id": "concept:math314.card.countable",
+      "title": "Countably infinite sets",
+      "blurb": "A set is countably infinite when it is in bijection with the natural numbers (cardinality aleph-nought).",
+      "unit": "Cardinality",
+      "prerequisites": [
+        "concept:math314.card.same_cardinality"
+      ],
+      "topo_rank": 3
+    },
+    {
+      "id": "concept:math314.card.least_infinite",
+      "title": "Aleph-nought as least infinite cardinal",
+      "blurb": "Every infinite set has cardinality at least that of the natural numbers.",
+      "unit": "Cardinality",
+      "prerequisites": [
+        "concept:math314.card.countable"
+      ],
+      "topo_rank": 4
+    },
+    {
+      "id": "concept:math314.card.uncountable",
+      "title": "Uncountable sets",
+      "blurb": "A set is uncountable when its cardinality strictly exceeds aleph-nought; e.g. the interval (0,1).",
+      "unit": "Cardinality",
+      "prerequisites": [
+        "concept:math314.card.countable"
+      ],
+      "topo_rank": 5
+    },
+    {
+      "id": "concept:math314.card.csb",
+      "title": "Cantor–Schröder–Bernstein",
+      "blurb": "Two injections, one each way, force a bijection, so the cardinalities are equal.",
+      "unit": "Cardinality",
+      "prerequisites": [
+        "concept:math314.card.same_cardinality"
+      ],
+      "topo_rank": 6
+    },
+    {
+      "id": "concept:math314.hw.problemset",
+      "title": "Problem-set practice",
+      "blurb": "Mixed practice from MATH 314 homework & concept-reinforcement sheets.",
+      "unit": "Problem Set (HW & CR)",
+      "prerequisites": [],
+      "topo_rank": 900
+    }
+  ],
   "feed_order": [
     "card:math314.intro.proof.def",
     "card:math314.intro.proof.mcq",
