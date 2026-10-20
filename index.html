@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Spoons Compass — find your nearest Spoons offline</title>
+<meta name="description" content="Find your nearest J D Wetherspoon pub without mobile data or Wi-Fi. Pub locations included, ready to explore. £0.99 on Android; iPhone coming soon." />
+<meta property="og:title" content="Spoons Compass" />
+<meta property="og:description" content="Your nearest Spoons, offline. Pub locations come with the app. Follow the compass and discover somewhere new." />
+<meta property="og:image" content="icon-1024.png" />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="hero">
+  <img src="icon-256.png" alt="Spoons Compass icon" class="hero-icon" width="180" height="180" />
+  <h1>Spoons Compass</h1>
+  <p class="tagline">Your nearest Spoons, offline.</p>
+  <a href="https://play.google.com/apps/testing/com.spoonscompass.spoons_compass"
+     class="cta" id="download-btn">
+    <span class="cta-platform">Google Play beta</span>
+    <span class="cta-label">Join the beta</span>
+  </a>
+  <p class="cta-note">£0.99 on Google Play. One purchase, no ads or subscriptions. iPhone coming soon.</p>
+</header>
+
+<section class="lead">
+  <p>
+    All the pub locations are already on your phone. Open Spoons Compass and use
+    your GPS and compass to find the nearest J&nbsp;D Wetherspoon, without mobile
+    data or Wi-Fi. Explore a new town or take a wander somewhere familiar — you
+    might find a Spoons you never knew was there.
+  </p>
+</section>
+
+<section class="screens">
+  <figure>
+    <img src="screenshots/screenshot-1-dark-metric.png" alt="Spoons Compass in dark mode, showing the pub name and distance in metres above the compass" loading="lazy" />
+    <figcaption>Dark mode, distances in metres</figcaption>
+  </figure>
+  <figure>
+    <img src="screenshots/screenshot-2-light-metric.png" alt="Spoons Compass in light mode with a distance in metres" loading="lazy" />
+    <figcaption>Tap the background for light mode</figcaption>
+  </figure>
+  <figure>
+    <img src="screenshots/screenshot-3-dark-imperial.png" alt="Spoons Compass in dark mode with imperial distance units" loading="lazy" />
+    <figcaption>Tap the distance for yards and miles</figcaption>
+  </figure>
+  <figure>
+    <img src="screenshots/screenshot-4-light-imperial.png" alt="Spoons Compass in light mode with imperial distance units" loading="lazy" />
+    <figcaption>Your choice of theme and units</figcaption>
+  </figure>
+</section>
+
+<section class="how">
+  <h2>Follow the compass</h2>
+  <ol>
+    <li>Open the app and allow location access when asked.</li>
+    <li>Hold your phone flat. The arrow points towards the nearest pub; its name and distance appear above the compass.</li>
+    <li>Choose your own route. The arrow and distance update as you move.</li>
+  </ol>
+  <p>
+    The distance is measured in a straight line. Tap it to switch between metres
+    and kilometres or yards and miles. Tap the background to change between light
+    and dark mode. The app remembers both choices.
+  </p>
+  <p>
+    UK pub locations are included with the app, using data from OpenStreetMap.
+    Your location and compass readings are processed on your phone and aren't
+    saved or sent to a server.
+  </p>
+</section>
+
+<section class="install">
+  <h2>Join the beta</h2>
+  <p>
+    Try Spoons Compass on Android before the public launch.
+  </p>
+  <ol>
+    <li>Email <a href="mailto:support@christiangarry.com" style="color: var(--gold);">support@christiangarry.com</a> to join, and include the Google account you use on your Android phone.</li>
+    <li>On that phone, tap <strong>Join the beta</strong> above, then <strong>Become a tester</strong>.</li>
+    <li>Follow the link to Google Play and install Spoons Compass.</li>
+    <li>Stay opted in for at least 14 days. Try the compass on a few walks and send any feedback to the support email above.</li>
+  </ol>
+  <p class="small">
+    Pub coverage is limited to the United Kingdom, including Northern Ireland.
+    Location access is required, and the arrow needs a working compass sensor.
+    An iPhone version is in development.
+  </p>
+</section>
+
+<footer>
+  <p class="disclaimer">
+    Spoons Compass is unofficial and is not affiliated with, endorsed by or
+    sponsored by J&nbsp;D Wetherspoon plc. "Wetherspoon" is a registered
+    trademark of J&nbsp;D Wetherspoon plc.
+  </p>
+  <nav class="footer-nav">
+    <a href="privacy.html">Privacy policy</a>
+  </nav>
+</footer>
+
+<script>
+  // Label the beta link for visitors on other platforms.
+  (function () {
+    var btn = document.getElementById('download-btn');
+    if (!/android/i.test(navigator.userAgent)) {
+      btn.querySelector('.cta-platform').textContent = 'Google Play for Android';
+      btn.querySelector('.cta-label').textContent = 'View the beta';
+      btn.classList.add('cta-secondary');
+    }
+  })();
+</script>
+
+</body>
+</html>
